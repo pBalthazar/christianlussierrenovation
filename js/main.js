@@ -30,24 +30,56 @@ $(document).ready(function(){
         }
     });
 
-    $('.active-works-carousel').owlCarousel({
-        center: true,
-        items:2,
-        loop:true,
-        margin: 100,
-        dots: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            480: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            }
-        }
-    });
+	// $('.active-works-carousel').owlCarousel({
+        // center: true,
+        // items:2,
+        // loop:true,
+        // margin: 10,
+        // responsive: {
+            // 0: {
+                // items: 1
+            // },
+            // 480: {
+                // items: 1,
+            // },
+            // 768: {
+                // items: 2,
+            // }
+        // }
+    // });
+	
+	$('.loop').owlCarousel({
+		center: true,
+		autoplay: true,
+		autoplayTimeout: 4000,
+		items:2,
+		loop:true,
+		margin:80,
+		responsive: {
+				0: {
+					items: 1
+				},
+				480: {
+					items: 1,
+				},
+				768: {
+					items: 2,
+				}
+			}
+	});
+	
+	var x = document.getElementsByClassName("avant");
+	var i;
+	for (i = 0; i < x.length; i++) {
+	  x[i].innerText = "AVANT";
+	}
+	
+	var x = document.getElementsByClassName("apres");
+	for (i = 0; i < x.length; i++) {
+	  x[i].innerText = "APRÈS";
+	}
+		
+	
     // Add smooth scrolling to Menu links
     $(".main-menu li a, .smooth").on('click', function(event) {
             if (this.hash !== "") {

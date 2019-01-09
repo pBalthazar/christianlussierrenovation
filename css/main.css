@@ -71,8 +71,23 @@
     line-height: 1.2em;
 }
 
-.owl-controls {
-	display: none;
+.carousel-image {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 320px;
+}
+
+/* Top left text */
+.top {
+  position: absolute;
+  top: 8px;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .float-r {
@@ -82,6 +97,29 @@
 .cwhite {
 	color: white;
 }
+
+.apres {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  /* background-color: green; */
+}
+
+.avant {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  /* background-color: green; */
+}
+
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
