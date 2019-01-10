@@ -2181,6 +2181,10 @@ body:after {
   position: relative;
 }
 
+.single-feature {
+  margin: 0 0 10px 10px;
+}
+
 .single-feature .icon span {
   position: relative;
   z-index: 2;
